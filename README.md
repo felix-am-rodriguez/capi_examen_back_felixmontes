@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Pasos para correr el proyecto ###
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Clona el repositorio.
+* Cambiate a la rama feature/hf-edad
+* Ejecuta la instalacion de las depencias npm (npm install)
+* Ejecuta la instalacion de las depencias composer (composer install)
+* Ejecuta las migraciones (php artisan migrate) **Debes crear la base de datos**
+* Ejecuta npm run dev
+* Ejecuta el servidor de pruebas (php artisan serve)
