@@ -7,5 +7,6 @@
 * Ejecuta la instalacion de las depencias npm (npm install)
 * Ejecuta la instalacion de las depencias composer (composer install)
 * Ejecuta las migraciones (php artisan migrate) **Debes crear la base de datos**
+* Ejecuta (php artisan db:seed)
 * Ejecuta npm run dev
 * Ejecuta el servidor de pruebas (php artisan serve)
