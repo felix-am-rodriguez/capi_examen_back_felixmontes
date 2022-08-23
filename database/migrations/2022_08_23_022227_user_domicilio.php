@@ -13,14 +13,19 @@ class UserDomicilio extends Migration
      */
     public function up()
     {
-        Schema::create('user_domicilio', function (Blueprint $table) {
+        Schema::create('user_domicilios', function (Blueprint $table) {
             $table->id("user_id");
             $table->string('domicilio');
-            $table->smallInteger('numero_exterior')->nullable();
+            $table->integer('numero_exterior')->nullable();
             $table->string("colonia");
-            $table->smallInteger('cp');
+            $table->string('cp',12);
             $table->string('ciudad', 100);
             $table->timestamps();
+
+            $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
         });
     }
 
@@ -31,6 +36,6 @@ class UserDomicilio extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flights');
+        Schema::dropIfExists('users_domicilios');
     }
 }
